@@ -1,0 +1,23 @@
+def add(a,b):
+    return a + b
+def subtract(a,b):
+    return a - b
+def multiply(a,b):
+    return a * b
+def divide(a,b):
+    return a / b
+
+a = int(input("enter the first number:"))
+b = int(input("enter the second number:"))
+result = input("enter the operation you want to perform: (add, subtract, multiply, divide):")
+
+if result == "add":
+    print("result:",a+b)
+elif result == "subtract":
+    print("result:",a-b)
+elif result == "multiply":
+    print("result:",a*b)
+elif result == "divide":
+    print("result:",a/b)
+else:
+    print("incorrect operation")
