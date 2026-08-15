@@ -1,3 +1,3 @@
 # newproject1
 this is a first git project:
-dikshant maurya
+Name : Dikshant Maurya
