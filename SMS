@@ -1,0 +1,56 @@
+students = [{"name" : "Aman", "roll no" : 40, "course" : "Btech"},
+{"name" : "Satyam", "roll no" : 50, "course" : "Btech"},
+{"name" : "Sandeep", "roll no" : 6, "course" : "MBA"},
+{"name" : "Arshad", "roll no" : 34, "course" : "Btech"},
+{"name" : "Prince", "roll no" : 23, "course" : "Btech"}]
+
+def addstudent(name,rollno,course):
+    student = {"name" : name, "roll no" : rollno, "course" : course}
+    students.append(student)
+
+def deletestudent(name,rollno,course):
+    student = {"name" :name, "roll no" : rollno, "course" : course}
+    students.remove(student)
+
+def viewstudent(name,rollno,course):
+    student = {"name" : name, "roll no" : rollno, "course" : course}
+    if student in students:
+        print("student is present")
+    else:
+        print("student is not found")
+
+choice =str(input("enter you want to perform operation:( 1. add student 2. view student 3. delete student)"))
+
+if choice == "1":
+    name = input("enter student name: ")
+    rollno = int(input("enter student roll no: "))
+    course = input("enter student course: ")
+    addstudent(name, rollno, course)
+
+elif choice == "2":
+    name = input("enter student name: ")
+    rollno = int(input("enter student roll no: "))
+    course = input("enter student course: ")
+    viewstudents(name, rollno, course)
+
+elif choice == "3":
+    name = input("enter student name: ")
+    rollno = int(input("enter student roll no: "))
+    course = input("enter student course: ")
+    deletesstudent(name, rollno, course)
+
+elif choice == "4":
+    print("Program closed.")
+
+else:
+    print("Invalid choice!")
+
+print("1. Add Student")
+print("2. View Students")
+print("3. Delete Student")
+
+
+choice = input("Enter your choice: ")
+
+for student in students:
+    print(student['roll no'])

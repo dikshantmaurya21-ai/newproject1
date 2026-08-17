@@ -1,0 +1,8 @@
+students = [{"name" : "Aman", "roll no" : 40, "course" : "Btech"},
+{"name" : "Satyam", "roll no" : 50, "course" : "Btech"},
+{"name" : "Sandeep", "roll no" : 6, "course" : "MBA"},
+{"name" : "Arshad", "roll no" : 34, "course" : "Btech"},
+{"name" : "Prince", "roll no" : 23, "course" : "Btech"}]
+
+for student in students:
+    print(students)
